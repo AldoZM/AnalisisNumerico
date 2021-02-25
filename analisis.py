@@ -1,8 +1,13 @@
+def Error(valorV,valorA):
+    Ea = abs(valorV-valorA) 
+    Er =  Ea/abs(valorV)
+    ErP=  Er*100 
 
-Ea = abs(0.15e9-1e9) 
-Er =  Ea/abs(0.15e9)
-ErP=  Er*100 
-
-print("Error absoluto ",Ea)
-print("Error relativo ", Er)
-print("Erro Porcentual ", ErP)
+    print("Error absoluto ",Ea)
+    print("Error relativo ", Er)
+    print("Erro Porcentual ", ErP,"%")
+print("Introduce el Valor verdadero")
+ValorV = int(input())
+print("Introduce el Valor aproximado")
+ValorA = int(input())
+Error(ValorV,ValorA)
